@@ -1,20 +1,13 @@
 <div align="center">
 
-# Layered WallPaper
+# Parallax WallPaper
 
-Layered WallPaper allows You to create multi-layered parallax wallpapers.<br />
+This allows you to create multi-layered parallax wallpapers.<br />
 Each layer moves with Your mouse cursor, creating this beautiful effect.
-
-[![](https://img.shields.io/github/v/release/jszczerbinsky/lwp?style=for-the-badge)](https://github.com/jszczerbinsky/lwp/releases/latest)
-[![](https://img.shields.io/github/downloads/jszczerbinsky/lwp/total?style=for-the-badge)](https://github.com/jszczerbinsky/lwp/releases/latest)
-[![](https://img.shields.io/github/actions/workflow/status/jszczerbinsky/lwp/build.yml?style=for-the-badge)](https://github.com/jszczerbinsky/lwp)
-[![](https://img.shields.io/discord/1077955077974794322?label=DISCORD&style=for-the-badge)](https://discord.gg/JmkCqjYFQa)
 
 [Installation](#installation) •
 [Configuration](#configuration) •
 [Creating Wallpapers](#creating-wallpapers)
-
-<a href="https://www.buymeacoffee.com/jszczerbinsky" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 https://user-images.githubusercontent.com/38699473/220888934-09788a6b-873c-469b-b147-b345e8a8949a.mp4
 
@@ -29,7 +22,7 @@ https://user-images.githubusercontent.com/38699473/220888934-09788a6b-873c-469b-
   
   - Install `SDL2` using Your package manager
   - If You are using `Wayland`, You also must install `XWayland`
-  - Download `.tar.gz` package from [releases](https://github.com/jszczerbinsky/lwp/releases/latest)
+  - Download `.tar.gz` package from [releases](https://github.com/jankozik/parallax-wallpaper/releases/latest)
   - Extract the content to `/`:
   ```shell
   sudo tar -o -xvf [archive name].tar.gz --directory /
@@ -45,7 +38,7 @@ https://user-images.githubusercontent.com/38699473/220888934-09788a6b-873c-469b-
   - Clone the repository and prepare a `build` directory:
 
   ```shell
-  git clone https://github.com/jszczerbinsky/lwp
+  git clone https://github.com/jankozik/parallax-wallpaper
   cd lwp
   mkdir build
   cd build
@@ -70,7 +63,7 @@ https://user-images.githubusercontent.com/38699473/220888934-09788a6b-873c-469b-
   <summary>macOS</summary>
   
   #### Installation steps
-  - Download and run the installer from [releases](https://github.com/jszczerbinsky/lwp/releases/latest)
+  - Download and run the installer from [releases](https://github.com/jankozik/parallax-wallpaper/releases/latest)
   - Drag and drop Layered_WallPaper into Applications
   - To make Layered WallPaper run on startup, run Toggle_Autorun.command
     - To stop running Layered WallPaper on startup, run it again
@@ -80,7 +73,7 @@ https://user-images.githubusercontent.com/38699473/220888934-09788a6b-873c-469b-
   - To build this project, You need to install `cmake` (homebrew: `brew install cmake`)
   - Clone the repository:
     ```zsh
-    git clone https://github.com/jszczerbinsky/lwp
+    git clone https://github.com/jankozik/parallax-wallpaper
     cd lwp
     
     ```
@@ -102,7 +95,7 @@ https://user-images.githubusercontent.com/38699473/220888934-09788a6b-873c-469b-
   <summary>Windows</summary>
   
   #### Installation steps
-  - Download and run the installer from [releases](https://github.com/jszczerbinsky/lwp/releases/latest)
+  - Download and run the installer from [releases](https://github.com/jankozik/parallax-wallpaper/releases/latest)
   - Layered WallPaper should run immediately after the installation
   
   #### Build from source instead
@@ -196,8 +189,6 @@ https://user-images.githubusercontent.com/38699473/220888934-09788a6b-873c-469b-
 
 ## Creating Wallpapers
 
-Want to share Your wallpaper? Join our [discord](https://discord.gg/JmkCqjYFQa)!
-
 Parallax wallpapers are not popular. Because of this if You want some cool parallax wallpaper, You have to either find a parallax game background on the internet and use it as a wallpaper or cut some real wallpaper into layers using Gimp or Photoshop.
 
 #### How to create a wallpaper for Layered WallPaper
@@ -228,27 +219,3 @@ C:
 | float  | movement[n]_y | Mouse sensitivity in Y axis for nth layer (optional)|
 | int    | repeat_x     | Repeat the wallpaper in X axis |
 | int    | repeat_y     | Repeat the wallpaper in Y axis |
-
-## License
-
-MIT License
-
-Copyright (c) 2022 Jakub Szczerbiński
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
